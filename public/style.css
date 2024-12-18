@@ -201,6 +201,22 @@ footer {
     border: none;
 }
 
+/*Avaliações*/
+.star {
+    color: orange;
+    font-size: 25px;
+}
+
+.rating-note {
+    font-weight: bold;
+    color: rgb(59, 151, 120);
+}
+
+.star-container {
+    display: flex;
+    justify-content: center;
+}
+
 @media (min-width: 600px) {
     .author-info {
         flex: 1;
