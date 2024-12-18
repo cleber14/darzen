@@ -11,6 +11,7 @@
     <!--Header-->
     <?php require "pages/header.php";?>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Darzen</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +35,9 @@
         </div>
     </div>
     </nav>
+    <div class="banner">
+        <img src="assets/images/banner.png" alt="banner" class="banner-img">
+    </div>
 
     <!-- Sobre o Canal -->
     <section class="container my-5">
