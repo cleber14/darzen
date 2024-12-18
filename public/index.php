@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,101 +8,74 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <h1>Que tal desenvolver uma nova habilidade?</h1>
-        <img src="assets/images/icons/DALL·E-2024-11-14-23.59.png" alt="capa">
-    </header>
-    <!--nav menu-->
-    <?php 
-      require "pages/nav.php";
-    ?>
-    <!--nav menu-->
-    <main>
-        <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/_GNeGcpMA8A?controls=0&modestbranding=1&rel=0&showinfo=0&autohide=1&iv_load_policy=3" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" 
-              allowfullscreen>
-            </iframe>
+    <!--Header-->
+    <?php require "pages/header.php";?>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Darzen</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.php">Início</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="pages/galery.php">Galeria</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="pages/assets.php">Assets</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="pages/cursos.php">Cursos</a>
+            </li>
+        </ul>
         </div>
-
-        <label for="hotmart">Curso de inglês com Rodrigo Veroneze</label>
-        <div class="container-links">
-            <div class="button">
-                <img src="assets/images/logo-hotmart-icone-1024.png" alt="logo-hotmart-icone-1024" width="50px">
-                <a href="https://go.hotmart.com/Q97110752X" target="_blank">Curso de inglês Rodrigo Veroneze</a>
-            </div>
-            <div class="qrCode">
-                <img src="assets/images/qrcode.png" alt="QR code" class="qrCode">
-            </div>
-        </div>
-
-        <!--Avaliações-->
-        <div class="rating">
-          <div class="star-container">
-          <span class="star" data-value="1">★</span>
-          <span class="star" data-value="2">★</span>
-          <span class="star" data-value="3">★</span>
-          <span class="star" data-value="4">★</span>
-          <span class="star" data-value="5">★</span>
-          </div>
-          <p class="rating-note">Sua opinião é muito importante para nós! ❤️</p>
-        </div>
-        
-        <!--Fechamento avaliações-->
-
-        <article>
-            <section>
-              <h2>Descrição Geral</h2>
-              <p>
-                O curso <strong>"Inglês da Sobrevivência"</strong>, criado por Rodrigo Veroneze, oferece uma abordagem prática e acessível 
-                para brasileiros que desejam aprender inglês voltado para situações do dia a dia. Com mais de 7 anos vivendo nos 
-                Estados Unidos e 4 anos como YouTuber, Rodrigo utiliza sua experiência para ajudar pessoas a superar desafios reais, 
-                especialmente tarefas cotidianas em um ambiente onde o inglês é essencial.
-              </p>
-            </section>
-            <section>
-              <h2>Pontos Fortes</h2>
-              <ul>
-                <li><strong>Foco em situações reais:</strong> O curso ensina inglês aplicável no cotidiano, como ir ao mercado, pedir comida ou resolver problemas simples.</li>
-                <li><strong>Didática acessível:</strong> Rodrigo utiliza uma linguagem simples, tornando o aprendizado mais fácil e descomplicado.</li>
-                <li><strong>Experiência autêntica:</strong> Gravações feitas com câmeras no corpo mostram interações reais, criando um ambiente de aprendizado imersivo.</li>
-                <li><strong>Estudo flexível:</strong> Como o curso é online, você pode estudar no seu próprio ritmo e de qualquer lugar.</li>
-              </ul>
-            </section>
-            <section>
-              <h2>Pontos de Atenção</h2>
-              <ul>
-                <li><strong>Acesso restrito:</strong> Não é possível fazer o download das aulas; o conteúdo só está disponível online, o que pode ser um problema em locais sem internet.</li>
-                <li><strong>Cobertura limitada:</strong> Ideal para quem quer aprender inglês básico e funcional, mas pode não atender a quem busca fluência avançada ou domínio completo do idioma.</li>
-              </ul>
-            </section>
-            <section>
-              <h2>Conclusão</h2>
-              <p>
-                O <strong>"Inglês da Sobrevivência"</strong> é indicado para quem busca uma solução prática e direta para aprender inglês básico em situações cotidianas. 
-                Porém, caso o objetivo seja um aprendizado mais amplo e profundo do idioma, pode ser necessário complementar os estudos com outras ferramentas.
-              </p>
-              <p>
-                Para acessar o curso, é preciso entrar na área de membros disponível no site oficial.
-              </p>
-            </section>
-        </article>
-    </main>
-</body>
-<footer>
-    <div class="footer-container">
-      <div class="author-info">
-        <p>Desenvolvido por <strong>Cleber Souza</strong>, vulgo <strong>Darzen</strong> no YouTube.</p>
-        <a href="https://www.youtube.com/@darzen_ofc" target="_blank" rel="noopener noreferrer">Visite meu canal</a>
-      </div>
-      <div class="social-media">
-        <a href="https://www.youtube.com/@darzen_ofc" target="_blank"><div class="icon"><img src="https://images.vexels.com/content/137425/preview/youtube-icon-logo-719479.png" alt="Mídia Social 1"></div></a>
-        <a href="https://www.instagram.com/darzen_ofc/" target="_blank"><div class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Mídia Social 2"></div></a>
-      </div> 
     </div>
-</footer>
+    </nav>
+
+    <!-- Sobre o Canal -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Sobre o Canal</h2>
+        <p>
+            No meu canal, eu abordo temas de entretenimento e animes, explorando como a mídia molda nossa percepção da realidade. 
+            Em vídeos como o próximo sobre "pseudo-gênios", desmascaro como algumas obras influenciam os espectadores com ideias equivocadas, 
+            mostrando que genialidade está mais ligada a esforço do que a talento nato.
+        </p>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Habilidades e Projetos</h2>
+        <ul>
+            <li>
+                <strong>Desenhar:</strong> Dicas para melhorar no estilo anime, desde anatomia até sombreamento.
+            </li>
+            <li>
+                <strong>Ferramentas 3D com Blender:</strong> Participe de desafios de 7 dias comigo, criando algo incrível no Blender!
+            </li>
+            <li>
+                <strong>Música:</strong> Produção de músicas no estilo anime, perfeitas para estudar ou relaxar.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Galeria de Artes -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Minhas Artes</h2>
+        <div class="row">
+            <!-- Exemplo de Imagens -->
+            <div class="col-md-4">
+                <img src="path/to/art1.jpg" alt="Arte 1" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4">
+                <img src="path/to/art2.jpg" alt="Arte 2" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4">
+                <img src="path/to/art3.jpg" alt="Arte 3" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+</body>
 </html>
