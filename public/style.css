@@ -1,11 +1,14 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Garante que a largura e altura não ultrapassem os limites */
 }
 
 body {
     background-color: rgb(255, 255, 255);
-    height: 50px;
+    height: 100%; /* Ocupa 100% da altura da tela */
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -32,10 +35,13 @@ main {
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.199);
+    width: 100%;
+    flex: 1; /* Garante que o main ocupe o restante da altura disponível */
+    overflow-x: hidden; /* Impede a rolagem lateral */
 }
 
 .button {
-    width: 280px;
+    width: 200px;
     height: 100px;
     background-color: white;
     border-radius: 10px 0px 0px 0px;
@@ -86,36 +92,36 @@ article {
     margin: 20px auto;
     max-width: 800px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  article h2 {
+article h2 {
     color: #2c3e50;
     font-size: 1.8rem;
     border-bottom: 2px solid #3498db;
     padding-bottom: 5px;
     margin-bottom: 15px;
-  }
+}
 
-  article p {
+article p {
     margin-bottom: 15px;
     text-align: justify;
-  }
+}
 
-  article ul {
+article ul {
     padding-left: 20px;
     margin-bottom: 15px;
-  }
+}
 
-  article ul li {
+article ul li {
     margin-bottom: 10px;
     list-style-type: disc;
-  }
+}
 
-  article ul li strong {
+article ul li strong {
     color: #2980b9;
-  }
+}
 
-  article strong {
+article strong {
     color: #3498db;
 }
 
@@ -126,9 +132,10 @@ footer {
     text-align: center;
     font-family: Arial, sans-serif;
     margin-top: 20px;
-  }
+    flex-shrink: 0; /* Impede que o footer encolha e desapareça */
+}
 
-  .footer-container {
+.footer-container {
     max-width: 800px;
     margin: auto;
     display: flex;
@@ -136,74 +143,75 @@ footer {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-  }
+}
 
-  .author-info {
+.author-info {
     flex: 1 1 100%;
-  }
+}
 
-  .author-info p {
+.author-info p {
     margin: 5px 0;
     font-size: 1rem;
-  }
+}
 
-  .author-info a {
+.author-info a {
     color: #3498db;
     text-decoration: none;
     font-weight: bold;
-  }
+}
 
-  .author-info a:hover {
+.author-info a:hover {
     text-decoration: underline;
-  }
+}
 
-  .social-media {
+.social-media {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-  }
+}
 
-  .social-media .icon {
+.social-media .icon {
     width: 40px;
     height: 40px;
     overflow: hidden;
-  }
+}
 
-  .social-media .icon img {
+.social-media .icon img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .video-container {
-    display: flex; /* Alinha o conteúdo dentro do contêiner */
-    justify-content: center; /* Centraliza o vídeo horizontalmente */
-    align-items: center; /* Centraliza o vídeo verticalmente */
-    background-color: #000000; /* Fundo preto para destacar o vídeo */
-    padding: 20px; /* Adiciona espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    max-width: 800px; /* Largura máxima para o contêiner */
-    margin: 20px auto; /* Centraliza na tela com espaçamento acima/abaixo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra para destaque */
-  }
+}
 
-  .video-container iframe {
-    width: 100%; /* Ocupa toda a largura do contêiner */
-    height: 100%; /* Ajusta a altura proporcionalmente */
-    border: none; /* Remove a borda padrão */
-  }
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
-  @media (min-width: 600px) {
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (min-width: 600px) {
     .author-info {
-      flex: 1;
-      text-align: left;
+        flex: 1;
+        text-align: left;
     }
     .social-media {
-      justify-content: flex-end;
+        justify-content: flex-end;
     }
-  }
+}
 
-  @media (max-width: 455px){
+@media (max-width: 455px) {
     header {
         display: flex;
         flex-direction: column;
@@ -212,6 +220,16 @@ footer {
 
     header img {
         margin-top: 25px;
-
     }
-  }
+
+    /* Adiciona o estilo para o main e footer se ajustarem no celular */
+    main, footer {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
