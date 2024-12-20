@@ -41,31 +41,21 @@
         <img src="assets/images/banner.png" alt="banner" class="banner-img">
     </div>
 
+    <div class="social-media">
+        <a href="https://www.youtube.com/@darzen_ofc" target="_blank"><div class="icon"><img src="https://images.vexels.com/content/137425/preview/youtube-icon-logo-719479.png" alt="Mídia Social 1"></div></a>
+        <a href="https://www.instagram.com/darzen_ofc/" target="_blank"><div class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Mídia Social 2"></div></a>
+    </div> 
+
     <article class="container-article">
         <!-- Sobre o Canal -->
     <section class="container my-5">
         <h2 class="text-center mb-4">Sobre o Canal</h2>
         <p>
-            No meu canal, eu abordo temas de entretenimento e animes, explorando como a mídia molda nossa percepção da realidade. 
-            Em vídeos como o próximo sobre "pseudo-gênios", desmascaro como algumas obras influenciam os espectadores com ideias equivocadas, 
-            mostrando que genialidade está mais ligada a esforço do que a talento nato.
+            No meu canal, compartilho minha paixão por arte, ciência e cultura pop, com um olhar que vai além do superficial. Sou fascinado por como os animes podem ser uma ponte para discussões mais profundas, abordando temas como psicologia, ciência e até filosofia, tudo isso de maneira acessível e conectada com o universo dos animes. <br><br>
+            Ao longo dos vídeos, exploro tanto o lado criativo quanto o analítico, seja desenhando personagens inspirados nos meus animes favoritos ou refletindo sobre o impacto da mídia na nossa percepção da realidade. Busco, de certa forma, conscientizar e expandir os horizontes do público otaku, mostrando que há muito mais para descobrir além das histórias fantásticas que amamos. <br><br>
+            Meu trabalho também é uma mistura de várias disciplinas, como design, música e 3D. Não apenas produzo conteúdos visuais, mas também crio músicas no estilo anime e me aprofundo em ferramentas como o Blender, sempre compartilhando o processo criativo com a galera. No fundo, o que mais me motiva é unir essas diversas áreas de interesse e criar projetos que conectem arte, aprendizado e entretenimento de forma única.
         </p>
-    </section>
 
-    <!-- Habilidades -->
-    <section class="container my-5">
-        <h2 class="text-center mb-4">Habilidades e Projetos</h2>
-        <ul>
-            <li>
-                <strong>Desenhar:</strong> Dicas para melhorar no estilo anime, desde anatomia até sombreamento.
-            </li>
-            <li>
-                <strong>Ferramentas 3D com Blender:</strong> Participe de desafios de 7 dias comigo, criando algo incrível no Blender!
-            </li>
-            <li>
-                <strong>Música:</strong> Produção de músicas no estilo anime, perfeitas para estudar ou relaxar.
-            </li>
-        </ul>
     </section>
 
     <!-- Galeria de Artes -->
@@ -84,7 +74,10 @@
                 <img src="https://i.postimg.cc/Sxj5khMs/FoxKevyn.png" alt="Arte 3" class="img-fluid rounded">
             </div>
         </div>
+
+        <button class="seeMore"><a href="pages/galery.php">Ver mais</a></button>
     </section>
 </body>
+<?php require "../includes/footer.php";?>
 </html>
 

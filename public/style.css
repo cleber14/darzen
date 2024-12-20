@@ -1,48 +1,45 @@
-@import url('cssfiles/my5.css');
 @import url('cssfiles/media.css');
+@import url('cssfiles/my5.css');
 
-/* Variáveis globais de cores */
 :root {
-    --background-body: rgb(255, 255, 255);
-    --header-gradient-start: black;
-    --header-gradient-end: rgb(255, 123, 0);
-    --header-text: white;
-    --button-bg: white;
-    --button-hover-bg: rgb(233, 233, 233);
-    --button-active-bg: aquamarine;
-    --button-link-color: rgb(0, 110, 255);
-    --article-bg: #f9f9f9;
-    --article-border: #ddd;
-    --article-text: #333;
-    --article-title: #2c3e50;
-    --article-title-border: #3498db;
-    --article-highlight: #2980b9;
-    --footer-bg: #2c3e50;
-    --footer-text: #ecf0f1;
-    --footer-link: #3498db;
-    --star-color: orange;
-    --rating-color: rgb(59, 151, 120);
-    --video-bg: #000000;
+    /* Cores principais */
+    --cor-primaria: rgb(255, 123, 0);
+    --cor-secundaria: black;
+    --cor-fundo: rgb(255, 255, 255);
+    --cor-destaque:  rgb(255, 123, 0);
+    --cor-titulo: #2c3e50;
+    --cor-texto: #333;
+    --cor-link: rgb(0, 110, 255);
+    --cor-fundo-dark: rgba(0, 0, 0, 0.034);
+    --cor-hover: rgb(233, 233, 233);
+    --cor-ativo: aquamarine;
+    --cor-footer: #2c3e50;
+    --cor-footer-text: #ecf0f1;
+    --cor-social-icon: #3498db;
+    --cor-banner: #f9f9f9;
+    --cor-star: orange;
+    --cor-rating: rgb(59, 151, 120);
 }
 
-/* Reset e configuração básica */
+/* Reset de margens e padding */
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Garante que a largura e altura não ultrapassem os limites */
+    box-sizing: border-box;
 }
 
+/* Corpo do site */
 body {
-    background-color: var(--background-body);
-    height: 100%; /* Ocupa 100% da altura da tela */
+    background-color: var(--cor-fundo);
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-/* Estilização do header */
+/* Cabeçalho */
 header {
-    background-image: linear-gradient(45deg, var(--header-gradient-start), var(--header-gradient-end));
-    color: var(--header-text);
+    background-image: linear-gradient(45deg, var(--cor-secundaria), var(--cor-primaria));
+    color: white;
     width: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 20px;
@@ -53,28 +50,28 @@ header {
 header img {
     width: 100px;
     border-radius: 100%;
-    border: solid var(--header-text) 5px;
+    border: solid white 5px;
     box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.185);
 }
 
-/* Estilização do main */
+/* Bloco Principal */
 main {
-    background-color: rgba(0, 0, 0, 0.034);
+    background-color: var(--cor-fundo-dark);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.199);
     width: 100%;
-    flex: 1; /* Garante que o main ocupe o restante da altura disponível */
-    overflow-x: hidden; /* Impede a rolagem lateral */
+    flex: 1;
+    overflow-x: hidden;
 }
 
 /* Botões */
 .button {
     width: 200px;
     height: 100px;
-    background-color: var(--button-bg);
+    background-color: var(--cor-fundo);
     border-radius: 10px 0px 0px 0px;
     display: flex;
     justify-content: center;
@@ -85,25 +82,36 @@ main {
 .button a {
     font-weight: bolder;
     text-decoration: none;
-    color: var(--button-link-color);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--cor-link);
 }
 
 .button:hover {
-    background-color: var(--button-hover-bg);
+    background-color: var(--cor-hover);
 }
 
 .button:active {
-    background-color: var(--button-active-bg);
+    background-color: var(--cor-ativo);
+}
+
+/* Links do Rodapé */
+.container-links {
+    display: flex;
+}
+
+label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Artigos */
 article {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: var(--article-text);
-    background-color: var(--article-bg);
-    border: 1px solid var(--article-border);
+    color: var(--cor-texto);
+    background-color: var(--cor-banner);
+    border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     margin: 20px auto;
@@ -112,52 +120,159 @@ article {
 }
 
 article h2 {
-    color: var(--article-title);
+    color: var(--cor-titulo);
     font-size: 1.8rem;
-    border-bottom: 2px solid var(--article-title-border);
+    border-bottom: 2px solid var(--cor-destaque);
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
 
-article strong {
-    color: var(--article-highlight);
+article p {
+    margin-bottom: 15px;
+    text-align: justify;
 }
 
-/* Footer */
+article ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+article ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+article ul li strong {
+    color: var(--cor-destaque);
+}
+
+article strong {
+    color: var(--cor-destaque);
+}
+
+/* Rodapé */
 footer {
-    background-color: var(--footer-bg);
-    color: var(--footer-text);
+    background-color: var(--cor-footer);
+    color: var(--cor-footer-text);
     padding: 20px 10px;
     text-align: center;
     font-family: Arial, sans-serif;
     margin-top: 20px;
-    flex-shrink: 0; /* Impede que o footer encolha e desapareça */
+    flex-shrink: 0;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.author-info {
+    flex: 1 1 100%;
+}
+
+.author-info p {
+    margin: 5px 0;
+    font-size: 1rem;
 }
 
 .author-info a {
-    color: var(--footer-link);
-}
-
-/* Avaliações */
-.star {
-    color: var(--star-color);
-    font-size: 25px;
-}
-
-.rating-note {
+    color: var(--cor-destaque);
+    text-decoration: none;
     font-weight: bold;
-    color: var(--rating-color);
 }
 
-/* Container de vídeo */
+.author-info a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media .icon {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.social-media .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Vídeo */
 .video-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--video-bg);
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     max-width: 800px;
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Avaliações */
+.star {
+    color: var(--cor-star);
+    font-size: 25px;
+}
+
+.rating-note {
+    font-weight: bold;
+    color: var(--cor-rating);
+}
+
+.star-container {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.qrCode {
+    width: 100px;
+}
+
+.img-fluid{
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.274);
+}
+
+.seeMore {
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: solid rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.seeMore a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.seeMore:hover {
+    background-color: orange;
 }
