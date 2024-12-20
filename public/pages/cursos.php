@@ -9,10 +9,9 @@
 </head>
 <body>
     <!--header-->
-    <?php require "header.php";?>
-    <!--nav menu-->
     <?php 
-      require "nav.php";
+      require "../../includes/header.php";
+      require "../../includes/nav.php";
     ?>
     <!--nav menu-->
     <main>

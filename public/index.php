@@ -9,7 +9,9 @@
 </head>
 <body>
     <!--Header-->
-    <?php require "pages/header.php";?>
+    <?php
+    require "../includes/header.php";
+    ?>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
     <div class="container-fluid">
@@ -71,15 +73,16 @@
         <div class="row">
             <!-- Exemplo de Imagens -->
             <div class="col-md-4">
-                <img src="path/to/art1.jpg" alt="Arte 1" class="img-fluid rounded">
+                <img src="https://i.postimg.cc/26q8ZJM8/GIRL-GOAT.png" alt="Arte 1" class="img-fluid rounded">
             </div>
             <div class="col-md-4">
-                <img src="path/to/art2.jpg" alt="Arte 2" class="img-fluid rounded">
+                <img src="https://i.postimg.cc/yd9CBz29/POST-TECH-ASIAN-INSTA.png" alt="Arte 2" class="img-fluid rounded">
             </div>
             <div class="col-md-4">
-                <img src="path/to/art3.jpg" alt="Arte 3" class="img-fluid rounded">
+                <img src="https://i.postimg.cc/Sxj5khMs/FoxKevyn.png" alt="Arte 3" class="img-fluid rounded">
             </div>
         </div>
     </section>
 </body>
 </html>
+
