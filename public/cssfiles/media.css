@@ -1,0 +1,32 @@
+@media (min-width: 600px) {
+    .author-info {
+        flex: 1;
+        text-align: left;
+    }
+    .social-media {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 455px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        margin-top: 25px;
+    }
+
+    /* Adiciona o estilo para o main e footer se ajustarem no celular */
+    main, footer {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -41,7 +41,8 @@
         <img src="assets/images/banner.png" alt="banner" class="banner-img">
     </div>
 
-    <!-- Sobre o Canal -->
+    <article class="container-article">
+        <!-- Sobre o Canal -->
     <section class="container my-5">
         <h2 class="text-center mb-4">Sobre o Canal</h2>
         <p>
@@ -68,7 +69,8 @@
     </section>
 
     <!-- Galeria de Artes -->
-    <section class="container my-5">
+</article>
+<section class="container my-5">
         <h2 class="text-center mb-4">Minhas Artes</h2>
         <div class="row">
             <!-- Exemplo de Imagens -->
