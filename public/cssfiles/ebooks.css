@@ -1,0 +1,28 @@
+.ebooks-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ebooks-container ul li a{
+    text-decoration: none;
+
+    
+}
+
+.ebooks-container ul li {
+    list-style-type: none;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ebooks-container img{
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.336);
+}
+
+.coursesList h3 {
+    text-align: center;
+    padding-top: 20px;
+}

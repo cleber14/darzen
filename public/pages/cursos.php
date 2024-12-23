@@ -13,7 +13,17 @@
       require "../../includes/header.php";
       require "../../includes/nav.php";
     ?>
-    <!--nav menu-->
+
+    <section class="coursesList">
+      <h3>eBooks</h3>
+      <div class="ebooks-container">
+        <img src="https://i.postimg.cc/xCrjM51z/Ingl-s-com-ANIME.png" style="width: 200px" alt="capaeBook">
+        <ul>
+          <li><a href="../ebooks/ingles-com-animes.pdf" download="ingles-com-animes.pdf">eBook Inglês com Animes</a></li>
+        </ul>
+      </div>
+    </section>
+
     <main>
         <div class="video-container">
             <iframe 
@@ -90,5 +100,6 @@
         </article>
     </main>
 </body>
-<?php require "../../includes/footer.php";?>
+<?php require "../../includes/footer.php";
+?>
 </html>

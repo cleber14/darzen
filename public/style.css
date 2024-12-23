@@ -1,9 +1,11 @@
 @import url('cssfiles/media.css');
 @import url('cssfiles/my5.css');
+@import url('cssfiles/galery.css');
+@import url('cssfiles/ebooks.css');
 
 :root {
     /* Cores principais */
-    --cor-primaria: rgb(255, 123, 0);
+    --cor-primaria: rgb(37, 37, 37);
     --cor-secundaria: black;
     --cor-fundo: rgb(255, 255, 255);
     --cor-destaque:  rgb(255, 123, 0);
@@ -246,10 +248,6 @@ footer {
     justify-content: center;
 }
 
-.banner-img {
-    width: 100%;
-}
-
 .qrCode {
     width: 100px;
 }
@@ -275,4 +273,69 @@ footer {
 
 .seeMore:hover {
     background-color: orange;
+}
+
+.videosYoutube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.recent-videos-h2 {
+    text-align: center;
+}
+
+.info-video {
+    background-color: white;
+    width: 30%;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.356);
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.info-video:hover {
+    scale: 1.1;
+}
+
+.info-video p {
+    padding: 20px;
+}
+
+@media (max-width: 750px) {
+    .videosYoutube {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info-video {
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 270px) {
+    .galery {
+        justify-content: center;
+    }
+
+    .imgGalery {
+        width: 100%;
+    }
+
+    .imgGalery img {
+        width: 100%;
+    }
 }
