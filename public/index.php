@@ -90,6 +90,11 @@
 
         <button class="seeMore"><a href="pages/galery.php">Ver mais</a></button>
     </section>
+<!--Bot ATENDIMENTO-->
+<div class="bot-container">
+    <p>teste</p>
+</div>
+<!--Final Bot Atendimento-->
 </body>
 
 <script src="script.js"></script>
