@@ -1,4 +1,4 @@
-// Função que redireciona para o link do vídeo
+
 function redirectToLink(event) {
     if(event.target.closest('.info-video')) { // Garantir que estamos clicando na div correta
         const videoId = event.target.closest('.info-video').id; // Pega o ID da div clicada

@@ -311,15 +311,72 @@ footer {
 }
 
 .bot-container {
-    width: 100px;
-    height: 150px;
+    position: fixed;
+    width: 300px;
+    height: 500px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 2px 0px black;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.247);
     border-radius: 20px;
-    position: absolute;
-    right: 20px;
+    left: 20px;
     bottom: 20px;
-    display: fixed;
+    padding: 10px;
+    overflow: hidden;
+    overflow: scroll;
+    display: none;
+}
+
+.bot-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.close-button {
+    font-size: 20px;
+    color: var(--cor-destaque);
+    cursor: pointer;
+    position: fixed;
+}
+
+.botCicleClosed {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    left: 20px;
+    bottom: 20px;
+    background-color: var(--cor-destaque);
+    z-index: 14;
+    display: block;
+}
+
+.bot-message {
+    padding: 5px;
+    background-color: var(--cor-destaque);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: fit-content;
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+.person-bot {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 5px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.chatbubbles {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media (max-width: 750px) {
