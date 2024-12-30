@@ -40,7 +40,7 @@
         </div>
     </nav>
 
-    <form action="send-email.php" method="POST" class="p-4 border rounded shadow">
+    <form action="form/dados.php" method="POST" class="p-4 border rounded shadow">
         <div class="mb-3">
             <label for="name" class="form-label">Your Name:</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
