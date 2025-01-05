@@ -36,7 +36,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Send email
         $mail->send();
-        echo "Mensagem enviada com sucesso!";
+        
+        header('Location: ../../index.php');
+
     } catch (Exception $e) {
         echo "A mensagem não pode ser enviada. Mailer Error: {$mail->ErrorInfo}";
     }
