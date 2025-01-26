@@ -5,9 +5,20 @@
     align-items: center;
 }
 
+.ebooks-container .desc {
+    padding: 20px;
+    width: 300px;
+}
+
+.ebooks-container .desc p {
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+}
+
 .ebooks-container ul li a{
     text-decoration: none;
-
     
 }
 

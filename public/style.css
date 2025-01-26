@@ -2,12 +2,14 @@
 @import url('cssfiles/my5.css');
 @import url('cssfiles/galery.css');
 @import url('cssfiles/ebooks.css');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('cssfiles/courses.css');
 
 :root {
     /* Cores principais */
     --cor-primaria: rgb(37, 37, 37);
     --cor-secundaria: black;
-    --cor-fundo: rgb(255, 255, 255);
+    --bs-body-bg: linear-gradient(45deg, black, red);
     --cor-destaque:  rgb(255, 123, 0);
     --cor-titulo: #2c3e50;
     --cor-texto: #333;
@@ -18,7 +20,7 @@
     --cor-footer: #2c3e50;
     --cor-footer-text: #ecf0f1;
     --cor-social-icon: #3498db;
-    --cor-banner: #f9f9f9;
+    --cor-banner: #ffffff;
     --cor-star: orange;
     --cor-rating: rgb(59, 151, 120);
 }
@@ -32,7 +34,7 @@
 
 /* Corpo do site */
 body {
-    background-color: var(--cor-fundo);
+    background-color: var(--bs-body-bg)!important;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -43,10 +45,13 @@ header {
     background-image: linear-gradient(45deg, var(--cor-secundaria), var(--cor-primaria));
     color: white;
     width: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 20px;
     display: flex;
     justify-content: space-around;
+}
+
+h2 {
+    font-family: "Carter One" serif !important;
 }
 
 header img {
@@ -261,7 +266,7 @@ footer {
     padding: 10px;
     border-radius: 10px;
     margin-top: 20px;
-    border: solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     transition: 0.5s;
 }
 
@@ -272,7 +277,7 @@ footer {
 }
 
 .seeMore:hover {
-    background-color: orange;
+    background-color: rgb(235, 235, 235);
 }
 
 .videosYoutube {
@@ -350,7 +355,7 @@ footer {
 
 .bot-message {
     padding: 5px;
-    background-color: var(--cor-destaque);
+    background-color: var(--cor-primaria);
     color: white;
     font-weight: bold;
     border-radius: 5px;

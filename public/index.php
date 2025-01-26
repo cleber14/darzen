@@ -16,7 +16,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Darzen</a>
+            <a class="navbar-brand" href="#"><h1>Darzen</h1></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,6 +45,27 @@
 
     <!-- Vídeos -->
     <h2 class="recent-videos-h2">Vídeos mais recentes</h2>
+
+    <section class="videosYoutube">
+        <div class="info-video" onclick="redirectToLink()" id="video6">
+            <img src="assets/images/aprovacao.png" alt="" class="thumbnail thumbnail-1">
+            <p><strong>VOCÊ SE PREOCUPA DEMAIS COM A APROVAÇÃO DOS OUTROS! ISSO ESTÁ TE SABOTANDO! [ENTENDA]</strong></p>
+        </div>
+
+        <div class="info-video" onclick="redirectToLink()" id="video5">
+            <img src="assets/images/Thumbnail-oportunity3.png" alt="" class="thumbnail thumbnail-2">
+            <p><strong>NÃO É DESMOTIVAÇÃO, É FALTA DE CLAREZA... [EU VOU TE AJUDAR!]
+            </strong></p>
+        </div>
+
+        <div class="info-video" onclick="redirectToLink()" id="video4">
+            <img src="assets/images/brainrot-thumbnail.png" alt="" class="thumbnail thumbnail-3">
+            <p><strong>SEU CÉREBRO TÁ VICIADO EM ESTÍMULOS RÁPIDOS! [O QUE É BRAINROT?]
+            </strong></p>
+        </div>
+        
+    </section>
+
     <section class="videosYoutube">
         <div class="info-video" onclick="redirectToLink()" id="video1">
             <img src="assets/images/thumbnail-1.png" alt="" class="thumbnail thumbnail-1">
@@ -68,15 +89,28 @@
     <section class="container my-5">
         <h2 class="text-center mb-4">Sobre o Canal</h2>
         <p>
-            No meu canal, compartilho minha paixão por arte, ciência e cultura pop, com um olhar que vai além do superficial. Sou fascinado por como os animes podem ser uma ponte para discussões mais profundas, abordando temas como psicologia, ciência e até filosofia, tudo isso de maneira acessível e conectada com o universo dos animes. <br><br>
-            Ao longo dos vídeos, exploro tanto o lado criativo quanto o analítico, seja desenhando personagens inspirados nos meus animes favoritos ou refletindo sobre o impacto da mídia na nossa percepção da realidade. Busco, de certa forma, conscientizar e expandir os horizontes do público otaku, mostrando que há muito mais para descobrir além das histórias fantásticas que amamos. <br><br>
+        Oi, eu sou o Darzen! Talvez você já tenha me visto por aqui. Vou te contar um pouco sobre mim e o que você vai encontrar no canal. Sou designer, músico e apaixonado por estudos sobre o cérebro 🧠. 
+        <br><br> 
+        Neste espaço, meu foco é compartilhar conteúdos de auto desenvolvimento, especialmente voltados para o público jovem. Em 2025, meus projetos têm como objetivo ajudar você a aprimorar habilidades essenciais, desde o fortalecimento da mentalidade 🧠 até o desenvolvimento de competências práticas para a vida e os estudos 📚. 
+        <br><br> 
+        Vou trazer dicas para melhorar a produtividade, lidar com os desafios do dia a dia, e até explorar como os conhecimentos de psicologia e ciência 🔬 podem te ajudar a entender melhor a si mesmo. 
+        <br><br> 
+        Além disso, não faltam reflexões sobre como podemos aplicar o que aprendemos no universo dos animes para o nosso crescimento pessoal 🚀. A ideia é te motivar a se tornar a melhor versão de você mesmo, enfrentando os obstáculos com confiança e propósito.
+
         </p>
     </section>
 
     <!-- Galeria de Artes -->
 </article>
 <section class="container my-5">
-        <h2 class="text-center mb-4">Minhas Artes</h2>
+        <h2 class="text-center mb-4">Me siga no instagram</h2>
+        <div class="social-media">
+            <a href="https://www.instagram.com/darzen_ofc/" target="_blank"><div class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Mídia Social 2"></div></a>
+            <br>
+        </div>
+        <small>Fique por dentro dos bastidores dos vídeos, criação de concepts e projetos!</small>
+        <br>
+
         <div class="row">
             <!-- Exemplo de Imagens -->
             <div class="col-md-4">
@@ -107,14 +141,14 @@
         <img src="assets/images/robot.png" style="width: 100%" alt="robot">
     </div>
 
-    <p class="bot-message">Olá, sou sua AI bot do Canal Darzen. Qual a sua dúvida?</p>
+    <p class="bot-message">🤖 Ei, posso te ajudar com algo? </p>
     <p class="bot-message">
-    [1] Como fazer para acessar o eBook <br>
+    📚 Como fazer para acessar o eBook <br>
     <small>Para baixar <a href="pages/cursos.php">clique aqui</a></small><br>
     <br>
-    [2] Como fazer para adquirir o curso de inglês?<br>
+    🌍 Como fazer para adquirir o curso de inglês?<br>
     <small>Clique <a href="pages/cursos.php">aqui</a> para acessar a página de cursos</small><br><br>
-    [3] Quer entrar em contato?<br>
+    ✉️ Quer entrar em contato?<br>
     mande um email clicando <a href="pages/contato.php">aqui</a><br><br>
     </p>
 </div>
@@ -138,6 +172,7 @@ botCicleClosed.addEventListener("click", function() {
 
 </script>
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3315537284666577" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

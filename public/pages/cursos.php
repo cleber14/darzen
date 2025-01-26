@@ -15,9 +15,19 @@
     ?>
 
     <section class="coursesList">
-      <h3>eBooks</h3>
+      <h3 style="color: white">eBooks</h3>
+      
       <div class="ebooks-container">
         <img src="https://i.postimg.cc/xCrjM51z/Ingl-s-com-ANIME.png" style="width: 200px" alt="capaeBook">
+        
+        <div class="desc">
+          <div class="free"><p>Gratuito</p>
+          </div>
+          <small>Aprenda inglês de uma maneira divertida e envolvente com Inglês com Animes! 
+            Este eBook traz uma abordagem única para aprender o idioma, usando o universo dos 
+            animes como ferramenta para te ajudar a expandir seu vocabulário.</small>
+        </div>
+
         <ul>
           <li><a href="../ebooks/ingles-com-animes.pdf" download="ingles-com-animes.pdf">eBook Inglês com Animes</a></li>
         </ul>
@@ -99,6 +109,8 @@
             </section>
         </article>
     </main>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3315537284666577" crossorigin="anonymous"></script>
 </body>
 <?php require "../../includes/footer.php";
 ?>

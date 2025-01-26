@@ -12,6 +12,15 @@ function redirectToLink(event) {
             case 'video3':
                 window.open('www.youtube.com/watch?v=3dvq10QN_Gg&t', '_blank');
                 break;
+            case 'video4':
+                window.open('https://www.youtube.com/watch?v=K2kggUFt2cM', '_blank');
+                break;
+            case 'video5':
+                window.open('https://www.youtube.com/watch?v=yyN0xRHBRpQ', '_blank');
+                break;
+            case 'video6':
+                window.open('https://www.youtube.com/watch?v=radyWNDPJgk', '_blank');
+                break;
         }
     }
 }
