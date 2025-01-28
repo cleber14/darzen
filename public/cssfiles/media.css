@@ -18,6 +18,13 @@
     }
 }
 
+@media (max-width: 624px) {
+    .ebooks-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media (min-width: 600px) {
     .author-info {
         flex: 1;

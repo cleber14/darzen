@@ -4,6 +4,7 @@
 @import url('cssfiles/ebooks.css');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 @import url('cssfiles/courses.css');
+@import url('cssfiles/toggle.css');
 
 :root {
     /* Cores principais */
@@ -17,7 +18,7 @@
     --cor-fundo-dark: rgba(0, 0, 0, 0.034);
     --cor-hover: rgb(233, 233, 233);
     --cor-ativo: aquamarine;
-    --cor-footer: #2c3e50;
+    --cor-footer: #030303;
     --cor-footer-text: #ecf0f1;
     --cor-social-icon: #3498db;
     --cor-banner: #ffffff;
@@ -62,7 +63,7 @@ header img {
 }
 
 /* Bloco Principal */
-main {
+.toggle-container {
     background-color: var(--cor-fundo-dark);
     border-radius: 10px;
     display: flex;
