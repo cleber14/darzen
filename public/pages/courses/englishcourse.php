@@ -14,7 +14,7 @@
             width: fit-content;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 1px 0px 1px 0px black;
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.185);
             text-decoration: none;
             color: black;
             font-weight: bolder;

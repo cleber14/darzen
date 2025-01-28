@@ -61,7 +61,7 @@
         </div>
 
         <ul>
-          <li><a href="../ebooks/ingles-com-animes.pdf" download="ingles-com-animes.pdf">eBook Inglês com Animes</a></li>
+          <li><a href="../ebooks/ingles-com-anime.pdf" download="ingles-com-anime.pdf">eBook Inglês com Animes</a></li>
         </ul>
       </div>
     </section>

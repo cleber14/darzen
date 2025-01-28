@@ -84,10 +84,10 @@
         </div>
         
     </section>
-
+<!--
     <article class="container-article">
-    <!-- Sobre o Canal -->
-    <section class="container my-5">
+
+        <section class="container my-5">
         <h2 class="text-center mb-4">Sobre o Canal</h2>
         <p>
         Oi, eu sou o Darzen! Talvez você já tenha me visto por aqui. Vou te contar um pouco sobre mim e o que você vai encontrar no canal. Sou designer, músico e apaixonado por estudos sobre o cérebro 🧠. 
@@ -99,10 +99,12 @@
         Além disso, não faltam reflexões sobre como podemos aplicar o que aprendemos no universo dos animes para o nosso crescimento pessoal 🚀. A ideia é te motivar a se tornar a melhor versão de você mesmo, enfrentando os obstáculos com confiança e propósito.
 
         </p>
-    </section>
+    </section>    
 
-    <!-- Galeria de Artes -->
 </article>
+-->
+
+<!-- Galeria de Artes -->
 <section class="container my-5">
         <h2 class="text-center mb-4">Me siga no instagram</h2>
         <div class="social-media">
@@ -115,7 +117,7 @@
         <div class="row">
             <!-- Exemplo de Imagens -->
             <div class="col-md-4">
-                <img src="https://i.postimg.cc/26q8ZJM8/GIRL-GOAT.png" alt="Arte 1" class="img-fluid rounded">
+                <img src="https://i.postimg.cc/jd7xHtjz/Post-Livro.png" alt="Arte 1" class="img-fluid rounded">
             </div>
             <div class="col-md-4">
                 <img src="https://i.postimg.cc/yd9CBz29/POST-TECH-ASIAN-INSTA.png" alt="Arte 2" class="img-fluid rounded">
@@ -125,7 +127,7 @@
             </div>
         </div>
 
-        <button class="seeMore"><a href="pages/galery.php">Ver mais</a></button>
+        <button class="seeMore"><a href="https://www.instagram.com/darzen_ofc/">Ver mais</a></button>
     </section>
 <!--Bot ATENDIMENTO-->
 <div class="botCicleClosed">
